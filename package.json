@@ -1,0 +1,16 @@
+{
+  "name": "delegy",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc src/index.ts --declaration --outDir dist"
+  },
+  "keywords": [],
+  "author": "Marti Serra",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  }
+}
