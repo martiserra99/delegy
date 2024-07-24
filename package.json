@@ -1,14 +1,27 @@
 {
   "name": "delegy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc src/index.ts --declaration --outDir dist"
   },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "delegate",
+    "mapper",
+    "transform",
+    "project",
+    "modify"
+  ],
   "author": "Marti Serra",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "Utility function to delegate a task to a corresponding function",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martiserra99/delegy"
+  },
+  "homepage": "https://github.com/martiserra99/delegy",
   "devDependencies": {
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
