@@ -45,7 +45,7 @@ interface Cat {
   data: { name: string };
 }
 
-const infoDelegy = delegy<Person<Pet>, ["pet"], ["meta", "type"], [], string>(
+const func = delegy<Person<Pet>, ["pet"], ["meta", "type"], [], string>(
   ["pet"],
   ["meta", "type"],
   {
@@ -55,7 +55,7 @@ const infoDelegy = delegy<Person<Pet>, ["pet"], ["meta", "type"], [], string>(
 );
 
 function info(person: Person<Pet>): string {
-  return infoDelegy(person);
+  return func(person);
 }
 
 console.log(
@@ -109,7 +109,7 @@ interface Cat {
 type PersonWithDog = Narrow<Person, ["pet"], ["meta", "type"], "dog">;
 type PersonWithCat = Narrow<Person, ["pet"], ["meta", "type"], "cat">;
 
-const infoDelegy = delegy<Person, ["pet"], ["meta", "type"], [], string>(
+const func = delegy<Person, ["pet"], ["meta", "type"], [], string>(
   ["pet"],
   ["meta", "type"],
   {
@@ -119,7 +119,7 @@ const infoDelegy = delegy<Person, ["pet"], ["meta", "type"], [], string>(
 );
 
 function info(person: Person): string {
-  return infoDelegy(person);
+  return func(person);
 }
 
 console.log(
